@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		3A05C94822A3448100143AAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A05C94722A3448100143AAF /* AppDelegate.swift */; };
-		3A05C94A22A3448100143AAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A05C94922A3448100143AAF /* ViewController.swift */; };
+		3A05C94A22A3448100143AAF /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A05C94922A3448100143AAF /* CounterViewController.swift */; };
 		3A05C94D22A3448100143AAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A05C94B22A3448100143AAF /* Main.storyboard */; };
-		3A05C95022A3448100143AAF /* ReduxSample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A05C94E22A3448100143AAF /* ReduxSample.xcdatamodeld */; };
 		3A05C95222A3448300143AAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A05C95122A3448300143AAF /* Assets.xcassets */; };
 		3A05C95522A3448300143AAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A05C95322A3448300143AAF /* LaunchScreen.storyboard */; };
+		3A05C95D22A344B900143AAF /* ReduxCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A05C95C22A344B900143AAF /* ReduxCore.swift */; };
+		3A05C95F22A346F800143AAF /* CounterRedux.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A05C95E22A346F800143AAF /* CounterRedux.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3A05C94422A3448100143AAF /* ReduxSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReduxSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A05C94722A3448100143AAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3A05C94922A3448100143AAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3A05C94922A3448100143AAF /* CounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
 		3A05C94C22A3448100143AAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3A05C94F22A3448100143AAF /* ReduxSample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ReduxSample.xcdatamodel; sourceTree = "<group>"; };
 		3A05C95122A3448300143AAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A05C95422A3448300143AAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A05C95622A3448300143AAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A05C95C22A344B900143AAF /* ReduxCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxCore.swift; sourceTree = "<group>"; };
+		3A05C95E22A346F800143AAF /* CounterRedux.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterRedux.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				3A05C94722A3448100143AAF /* AppDelegate.swift */,
-				3A05C94922A3448100143AAF /* ViewController.swift */,
+				3A05C94922A3448100143AAF /* CounterViewController.swift */,
 				3A05C94B22A3448100143AAF /* Main.storyboard */,
 				3A05C95122A3448300143AAF /* Assets.xcassets */,
 				3A05C95322A3448300143AAF /* LaunchScreen.storyboard */,
 				3A05C95622A3448300143AAF /* Info.plist */,
-				3A05C94E22A3448100143AAF /* ReduxSample.xcdatamodeld */,
+				3A05C95C22A344B900143AAF /* ReduxCore.swift */,
+				3A05C95E22A346F800143AAF /* CounterRedux.swift */,
 			);
 			path = ReduxSample;
 			sourceTree = "<group>";
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A05C94A22A3448100143AAF /* ViewController.swift in Sources */,
-				3A05C95022A3448100143AAF /* ReduxSample.xcdatamodeld in Sources */,
+				3A05C94A22A3448100143AAF /* CounterViewController.swift in Sources */,
+				3A05C95D22A344B900143AAF /* ReduxCore.swift in Sources */,
 				3A05C94822A3448100143AAF /* AppDelegate.swift in Sources */,
+				3A05C95F22A346F800143AAF /* CounterRedux.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,19 +344,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		3A05C94E22A3448100143AAF /* ReduxSample.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				3A05C94F22A3448100143AAF /* ReduxSample.xcdatamodel */,
-			);
-			currentVersion = 3A05C94F22A3448100143AAF /* ReduxSample.xcdatamodel */;
-			path = ReduxSample.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 3A05C93C22A3448100143AAF /* Project object */;
 }
