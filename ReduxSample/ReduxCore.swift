@@ -14,11 +14,11 @@ protocol State {}
 
 typealias Reducer = (_ action: Action, _ state: State?) -> State
 
-protocol StoreSubscriber {
+protocol StoreSubscriber: class {
     func newState(state: State)
 }
 
-class Store {
+final class Store {
     let reducer: Reducer
     var state: State?
     var subscribers: [StoreSubscriber] = []
@@ -37,5 +37,11 @@ class Store {
     
     func subscribe(_ newSubscriber: StoreSubscriber){
         subscribers.append(newSubscriber)
+    }
+    
+    func unsubscribe(_ subscriber: StoreSubscriber){
+        if let index = subscribers.index(where: { return $0 === subscriber }) {
+            subscribers.remove(at: index)
+        }
     }
 }

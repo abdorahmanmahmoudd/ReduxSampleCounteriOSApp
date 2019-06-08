@@ -14,7 +14,26 @@
 		3A05C95522A3448300143AAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A05C95322A3448300143AAF /* LaunchScreen.storyboard */; };
 		3A05C95D22A344B900143AAF /* ReduxCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A05C95C22A344B900143AAF /* ReduxCore.swift */; };
 		3A05C95F22A346F800143AAF /* CounterRedux.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A05C95E22A346F800143AAF /* CounterRedux.swift */; };
+		3A30E7E922A80ABE00FF3A4E /* ReduxSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A30E7E822A80ABE00FF3A4E /* ReduxSampleUITests.swift */; };
+		3A30E7F722AAA9A100FF3A4E /* ReduxSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A30E7F622AAA9A100FF3A4E /* ReduxSampleTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A30E7EB22A80ABE00FF3A4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A05C93C22A3448100143AAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A05C94322A3448100143AAF;
+			remoteInfo = ReduxSample;
+		};
+		3A30E7F922AAA9A100FF3A4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A05C93C22A3448100143AAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A05C94322A3448100143AAF;
+			remoteInfo = ReduxSample;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3A05C94422A3448100143AAF /* ReduxSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReduxSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,10 +45,30 @@
 		3A05C95622A3448300143AAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A05C95C22A344B900143AAF /* ReduxCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxCore.swift; sourceTree = "<group>"; };
 		3A05C95E22A346F800143AAF /* CounterRedux.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterRedux.swift; sourceTree = "<group>"; };
+		3A30E7E622A80ABE00FF3A4E /* ReduxSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReduxSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A30E7E822A80ABE00FF3A4E /* ReduxSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxSampleUITests.swift; sourceTree = "<group>"; };
+		3A30E7EA22A80ABE00FF3A4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A30E7F422AAA9A100FF3A4E /* ReduxSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReduxSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A30E7F622AAA9A100FF3A4E /* ReduxSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxSampleTests.swift; sourceTree = "<group>"; };
+		3A30E7F822AAA9A100FF3A4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3A05C94122A3448100143AAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A30E7E322A80ABE00FF3A4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A30E7F122AAA9A100FF3A4E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				3A05C94622A3448100143AAF /* ReduxSample */,
+				3A30E7E722A80ABE00FF3A4E /* ReduxSampleUITests */,
+				3A30E7F522AAA9A100FF3A4E /* ReduxSampleTests */,
 				3A05C94522A3448100143AAF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				3A05C94422A3448100143AAF /* ReduxSample.app */,
+				3A30E7E622A80ABE00FF3A4E /* ReduxSampleUITests.xctest */,
+				3A30E7F422AAA9A100FF3A4E /* ReduxSampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,6 +111,24 @@
 				3A05C95E22A346F800143AAF /* CounterRedux.swift */,
 			);
 			path = ReduxSample;
+			sourceTree = "<group>";
+		};
+		3A30E7E722A80ABE00FF3A4E /* ReduxSampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3A30E7E822A80ABE00FF3A4E /* ReduxSampleUITests.swift */,
+				3A30E7EA22A80ABE00FF3A4E /* Info.plist */,
+			);
+			path = ReduxSampleUITests;
+			sourceTree = "<group>";
+		};
+		3A30E7F522AAA9A100FF3A4E /* ReduxSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A30E7F622AAA9A100FF3A4E /* ReduxSampleTests.swift */,
+				3A30E7F822AAA9A100FF3A4E /* Info.plist */,
+			);
+			path = ReduxSampleTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,6 +151,42 @@
 			productReference = 3A05C94422A3448100143AAF /* ReduxSample.app */;
 			productType = "com.apple.product-type.application";
 		};
+		3A30E7E522A80ABE00FF3A4E /* ReduxSampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A30E7EF22A80ABE00FF3A4E /* Build configuration list for PBXNativeTarget "ReduxSampleUITests" */;
+			buildPhases = (
+				3A30E7E222A80ABE00FF3A4E /* Sources */,
+				3A30E7E322A80ABE00FF3A4E /* Frameworks */,
+				3A30E7E422A80ABE00FF3A4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A30E7EC22A80ABE00FF3A4E /* PBXTargetDependency */,
+			);
+			name = ReduxSampleUITests;
+			productName = ReduxSampleUITests;
+			productReference = 3A30E7E622A80ABE00FF3A4E /* ReduxSampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		3A30E7F322AAA9A100FF3A4E /* ReduxSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A30E7FB22AAA9A100FF3A4E /* Build configuration list for PBXNativeTarget "ReduxSampleTests" */;
+			buildPhases = (
+				3A30E7F022AAA9A100FF3A4E /* Sources */,
+				3A30E7F122AAA9A100FF3A4E /* Frameworks */,
+				3A30E7F222AAA9A100FF3A4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A30E7FA22AAA9A100FF3A4E /* PBXTargetDependency */,
+			);
+			name = ReduxSampleTests;
+			productName = ReduxSampleTests;
+			productReference = 3A30E7F422AAA9A100FF3A4E /* ReduxSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -102,6 +199,14 @@
 				TargetAttributes = {
 					3A05C94322A3448100143AAF = {
 						CreatedOnToolsVersion = 10.1;
+					};
+					3A30E7E522A80ABE00FF3A4E = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 3A05C94322A3448100143AAF;
+					};
+					3A30E7F322AAA9A100FF3A4E = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 3A05C94322A3448100143AAF;
 					};
 				};
 			};
@@ -119,6 +224,8 @@
 			projectRoot = "";
 			targets = (
 				3A05C94322A3448100143AAF /* ReduxSample */,
+				3A30E7E522A80ABE00FF3A4E /* ReduxSampleUITests */,
+				3A30E7F322AAA9A100FF3A4E /* ReduxSampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +238,20 @@
 				3A05C95522A3448300143AAF /* LaunchScreen.storyboard in Resources */,
 				3A05C95222A3448300143AAF /* Assets.xcassets in Resources */,
 				3A05C94D22A3448100143AAF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A30E7E422A80ABE00FF3A4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A30E7F222AAA9A100FF3A4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +269,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3A30E7E222A80ABE00FF3A4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A30E7E922A80ABE00FF3A4E /* ReduxSampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A30E7F022AAA9A100FF3A4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A30E7F722AAA9A100FF3A4E /* ReduxSampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A30E7EC22A80ABE00FF3A4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A05C94322A3448100143AAF /* ReduxSample */;
+			targetProxy = 3A30E7EB22A80ABE00FF3A4E /* PBXContainerItemProxy */;
+		};
+		3A30E7FA22AAA9A100FF3A4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A05C94322A3448100143AAF /* ReduxSample */;
+			targetProxy = 3A30E7F922AAA9A100FF3A4E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3A05C94B22A3448100143AAF /* Main.storyboard */ = {
@@ -322,6 +472,84 @@
 			};
 			name = Release;
 		};
+		3A30E7ED22A80ABE00FF3A4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9TVY5F2R3C;
+				INFOPLIST_FILE = ReduxSampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.abdelrahman.ReduxSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ReduxSample;
+			};
+			name = Debug;
+		};
+		3A30E7EE22A80ABE00FF3A4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9TVY5F2R3C;
+				INFOPLIST_FILE = ReduxSampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.abdelrahman.ReduxSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ReduxSample;
+			};
+			name = Release;
+		};
+		3A30E7FC22AAA9A100FF3A4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9TVY5F2R3C;
+				INFOPLIST_FILE = ReduxSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.abdelrahman.ReduxSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReduxSample.app/ReduxSample";
+			};
+			name = Debug;
+		};
+		3A30E7FD22AAA9A100FF3A4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9TVY5F2R3C;
+				INFOPLIST_FILE = ReduxSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.abdelrahman.ReduxSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReduxSample.app/ReduxSample";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -339,6 +567,24 @@
 			buildConfigurations = (
 				3A05C95A22A3448300143AAF /* Debug */,
 				3A05C95B22A3448300143AAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A30E7EF22A80ABE00FF3A4E /* Build configuration list for PBXNativeTarget "ReduxSampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A30E7ED22A80ABE00FF3A4E /* Debug */,
+				3A30E7EE22A80ABE00FF3A4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A30E7FB22AAA9A100FF3A4E /* Build configuration list for PBXNativeTarget "ReduxSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A30E7FC22AAA9A100FF3A4E /* Debug */,
+				3A30E7FD22AAA9A100FF3A4E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

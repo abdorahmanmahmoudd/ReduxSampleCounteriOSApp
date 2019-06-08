@@ -8,7 +8,7 @@
 
 import Foundation
 
-let store = Store.init(reducer: counterReducer, state: nil)
+let store = Store(reducer: counterReducer, state: nil)
 
 struct AppState: State{
     var counter: Int = 0
